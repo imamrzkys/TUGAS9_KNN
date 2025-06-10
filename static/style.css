@@ -29,6 +29,27 @@ body {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+    /* Responsive plot images and cards */
+    .card-body img.img-fluid {
+        max-width: 95vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .card {
+        margin-bottom: 1.2rem;
+    }
+    .row.g-4 > [class^='col-'] {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .table-responsive {
+        font-size: 0.92rem;
+    }
+    h1, h4, h5 {
+        font-size: 1.1rem !important;
+    }
     .form-select, .form-control {
         font-size: 17px;
         min-height: 44px;
