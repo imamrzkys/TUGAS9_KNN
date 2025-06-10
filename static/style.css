@@ -18,56 +18,92 @@ body {
         padding-right: 2vw;
     }
     .card {
-        padding: 10px 2vw !important;
+        padding: 12px 2vw !important;
         border-radius: 16px !important;
-    }
-    .table {
-        font-size: 15px;
-        min-width: 400px;
-    }
-    .table-responsive {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-    /* Responsive plot images and cards */
-    .card-body img.img-fluid {
-        max-width: 95vw;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .card {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.4rem;
+        box-shadow: 0 2px 12px rgba(79, 142, 247, 0.09);
     }
     .row.g-4 > [class^='col-'] {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+    .card-body img.img-fluid, .card-body img, img.img-fluid {
+        max-width: 98vw;
+        width: 100%;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 1px 8px rgba(124, 58, 237, 0.05);
+    }
+    .btn, .btn-primary, .btn-outline-primary {
+        font-size: 1.05rem;
+        min-width: 120px;
+        min-height: 44px;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    .table {
+        font-size: 15px;
+        min-width: 360px;
+    }
     .table-responsive {
-        font-size: 0.92rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.97rem;
     }
     h1, h4, h5 {
-        font-size: 1.1rem !important;
+        font-size: 1.18rem !important;
+        letter-spacing: 0.2px;
     }
     .form-select, .form-control {
         font-size: 17px;
         min-height: 44px;
     }
-    .btn, .btn-primary {
-        font-size: 17px;
-        min-width: 120px;
-        min-height: 44px;
+    .card-title {
+        font-size: 1.03rem !important;
     }
-    h1, h2, h4, h6 {
-        font-size: 1.25rem !important;
-    }
-    img.img-fluid {
-        max-width: 98vw;
-        height: auto;
-        margin-bottom: 14px;
+    .card-body {
+        padding: 0.7rem 0.2rem;
     }
 }
+
+/* Tambahan untuk responsivitas dan estetika di desktop dan mobile */
+.chart-container, .card-body img.img-fluid, .card-body img, img.img-fluid {
+    width: 100%;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto !important;
+}
+
+@media (max-width: 400px) {
+    .card-body img.img-fluid, .card-body img, img.img-fluid {
+        max-width: 98vw;
+    }
+    .table {
+        font-size: 13px;
+        min-width: 240px;
+    }
+    .btn, .btn-primary, .btn-outline-primary {
+        font-size: 0.97rem;
+        min-width: 90px;
+        min-height: 38px;
+    }
+    }
+
+h1, h2, h4, h6 {
+    font-size: 1.25rem !important;
+}
+img.img-fluid {
+    max-width: 98vw;
+    height: auto;
+    margin-bottom: 14px;
+}
+
 
 @media (min-width: 1200px) {
     .container {
